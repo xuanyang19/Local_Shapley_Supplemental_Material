@@ -1,6 +1,6 @@
 # Local Shapley
 
-Code for computing Shapley values with local structure, comparing five methods across four model families.
+Code for computing Local Shapley, comparing five methods across four model families.
 
 ## Methods
 
@@ -26,29 +26,6 @@ Code for computing Shapley values with local structure, comparing five methods a
 
 ```bash
 pip install -r code/requirements.txt
-```
-
-## Usage
-
-Run from the `code/` directory:
-
-```bash
-cd code
-
-# WKNN on MNIST
-python -m wknn --dataset MNIST --methods global_mc lsmr_a --seeds 42
-
-# SVM on Breast Cancer
-python -m svm --dataset Breast_Cancer --methods global_mc lsmr_a --seeds 42
-
-# Decision Tree on Iris
-python -m tree --dataset Iris --methods global_mc lsmr_a --seeds 42
-
-# GNN on Cora
-python -m gnn --methods global_mc lsmr_a --seeds 42
-
-# Template with custom model
-python -m template --model-module template.examples.svm_model --dataset Iris --methods global_mc lsmr_a
 ```
 
 ### Common Arguments
