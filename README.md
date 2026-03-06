@@ -25,14 +25,16 @@ Code for computing Shapley values with local structure, comparing five methods a
 ## Installation
 
 ```bash
-pip install -r requirements.txt
+pip install -r code/requirements.txt
 ```
 
 ## Usage
 
-Run from the `Local_Shapley/` directory:
+Run from the `code/` directory:
 
 ```bash
+cd code
+
 # WKNN on MNIST
 python -m wknn --dataset MNIST --methods global_mc lsmr_a --seeds 42
 
