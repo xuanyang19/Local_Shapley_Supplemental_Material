@@ -25,7 +25,7 @@ Code for computing Local Shapley, comparing five methods across four model famil
 ## Installation
 
 ```bash
-pip install -r code/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Common Arguments
